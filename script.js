@@ -14,7 +14,7 @@ function updateClock() {
         second: '2-digit',
         hour12: false
     };
-    
+
     // Fallback locally if formatting fails
     try {
         const timeString = new Intl.DateTimeFormat('en-US', options).format(now);
@@ -80,10 +80,10 @@ document.querySelectorAll('.view-more-btn').forEach(btn => {
     btn.addEventListener('click', () => {
         const details = btn.nextElementSibling;
         const isOpen = details.style.display === 'block';
-        
+
         details.style.display = isOpen ? 'none' : 'block';
         btn.classList.toggle('open', !isOpen);
-        
+
         // Update button text while keeping the icon child
         const textNode = Array.from(btn.childNodes).find(n => n.nodeType === 3);
         if (textNode) {

@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rahul Khade</title>
+    <link rel="icon" type="image/png" href="./public/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="./public/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="./public/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./public/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="./public/favicon/site.webmanifest" />
     
     <!-- Meta tags for SEO & best practices -->
     <meta name="description" content="Personal portfolio of Rahul Khade, Full-stack developer and Product builder.">
@@ -19,10 +24,10 @@
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
-    <!-- Theme Toggle at top right -->
-    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
-        <i data-lucide="sun" class="icon-sun"></i>
-        <i data-lucide="moon" class="icon-moon"></i>
+    <button id="theme-toggle" class="theme-switch" aria-label="Toggle theme">
+        <span class="switch-handle"></span>
+        <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+        <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
     </button>
 
     <div class="container">
@@ -34,7 +39,7 @@
             </div>
             <h1 class="name">Rahul Khade</h1>
             <div class="metadata">
-                <span class="pronunciation">/rahul khade/</span>
+                <span class="pronunciation">/ˈrɑː.hʊl ˈkʰaː.ɖe/</span>
                 <span class="dot">•</span>
                 <span class="pos">noun</span>
                 <span class="dot">•</span>
@@ -57,20 +62,19 @@
                 <div class="experience-item">
                     <div class="experience-header">
                         <div class="title-company">
-                            <h3>Resonate (YC W24)</h3>
-                            <span class="role">Founding Engineer</span>
+                            <h3>Sumago Infotech Pvt. Ltd</h3>
+                            <span class="role">Intern</span>
                         </div>
                         <div class="location-date">
-                            <span>San Francisco, CA</span><br>
-                            <span>2024 - Present</span>
+                            <span>Pune, Maharashtra</span><br>
+                            <span>Dec 2023</span>
                         </div>
                     </div>
-                    <p class="exp-desc">Leading engineering efforts to build scalable consumer products from 0 to 1.</p>
+                    <p class="exp-desc"> Led the development of a comprehensive MERN stack project during internship at Sumago Infotech Pvt. Ltd.,employing ReactJS, React Router, Redux, and MUI fonts to create a visually appealing and functional user interface</p>
                     <button class="view-more-btn">View More <i data-lucide="chevron-down"></i></button>
                     <ul class="exp-details">
-                        <li>Architected the core backend infrastructure using Node.js and PostgreSQL.</li>
-                        <li>Implemented real-time data sync across clients using WebSockets.</li>
-                        <li>Worked closely with design to ensure high-fidelity UI execution.</li>
+                        <li> Utilized Node.js, Express.js, Axios, and socket.io to establish a robust server-side architecture, ensuring efficient communication and seamless integration with the frontend components.</li>
+                        <li> Implemented MongoDB Atlas for the project’s database, ensuring scalable and efficient data management, showcasing proficiency in full-stack development and adeptness in integrating diverse technologies to deliver dynamic and responsive applications.</li>
                     </ul>
                 </div>
 
@@ -78,20 +82,20 @@
                 <div class="experience-item">
                     <div class="experience-header">
                         <div class="title-company">
-                            <h3>Athena Consulting Ltd. Dubai</h3>
-                            <span class="role">Engineering Intern</span>
+                            <h3>Ordnance Factory Chanda</h3>
+                            <h3>Ministry of Defence, Government of India</h3>
+                            <span class="role">Intern at Information Technology Center(ITC)</span>
                         </div>
                         <div class="location-date">
-                            <span>Dubai, UAE</span><br>
-                            <span>2023 - 2024</span>
+                            <span>Chandrapur, Maharashtra</span><br>
+                            <span>July 2023</span>
                         </div>
                     </div>
-                    <p class="exp-desc">Led the complete system design and deployment architecture for Eumlet, a UAE-based B2B Web3 payments platform.</p>
+                    <p class="exp-desc"> Acquired practical expertise in HTML, CSS, JavaScript, Bootstrap, PHP, MySQL, XAMPP, Comnet, and server management during internship at Ordnance Factory Chanda</p>
                     <button class="view-more-btn">View More <i data-lucide="chevron-down"></i></button>
                     <ul class="exp-details">
-                        <li>Configured Debian EC2 instances and NGINX reverse proxies.</li>
-                        <li>Implemented highly available AWS architecture.</li>
-                        <li>Developed secure smart contracts for payment routing.</li>
+                        <li> Applied learned skills to execute real-world projects, cultivating a deep understanding of technology applications in dynamic environments.</li>
+                        <li> Demonstrated proficiency in diverse web development tools and server configurations, enhancing capabilities for future endeavors.</li>
                     </ul>
                 </div>
             </div>
@@ -114,14 +118,24 @@
         <!-- Education -->
         <section class="section education reveal-hidden" id="education">
             <h2 class="section-title">EDUCATION</h2>
+
+            <div class="education-item">
+                <div class="edu-details">
+                    <h3>C-DAC (Centre for Development of Advanced Computing)</h3>
+                    <p>Post Graduate Diploma in Advanced Computing (PG-DAC), Pune</p>
+                </div>
+                <div class="location-date">
+                    <span>Aug 2025 - Feb 2026</span>
+                </div>
+            </div>
             
             <div class="education-item">
                 <div class="edu-details">
-                    <h3>SKNCOE PUNE</h3>
-                    <p>2022 - 2026</p>
+                    <h3>Savitribai Phule Pune University</h3>
+                    <p>Bachelors in Computer Science</p>
                 </div>
                 <div class="location-date">
-                    <span>B.E. Computer Science</span>
+                    <span>2021 - 2025</span>
                 </div>
             </div>
         </section>
