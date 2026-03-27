@@ -92,11 +92,37 @@ document.querySelectorAll('.view-more-btn').forEach(btn => {
     });
 });
 
-// Agent Mode Toggle Logic
-const agentToggle = document.getElementById('agent-toggle');
-if (agentToggle) {
-    agentToggle.addEventListener('click', (e) => {
-        e.preventDefault();
-        document.body.classList.toggle('agent-mode');
+// Tech Stack reveal toggle
+const stackToggle = document.getElementById('stack-toggle');
+const fullStackPanel = document.getElementById('full-stack-panel');
+const stackPreview = document.querySelector('.stack-preview');
+
+if (stackToggle && fullStackPanel) {
+    stackToggle.addEventListener('click', () => {
+        const isOpen = stackToggle.classList.toggle('open');
+
+        stackToggle.setAttribute('aria-expanded', String(isOpen));
+        stackToggle.textContent = isOpen ? 'Show Less' : 'View Full Stack';
+        stackToggle.classList.toggle('open', isOpen);
+        fullStackPanel.hidden = false;
+        if (stackPreview) {
+            stackPreview.classList.toggle('is-hidden', isOpen);
+        }
+
+        requestAnimationFrame(() => {
+            fullStackPanel.classList.toggle('is-open', isOpen);
+        });
+
+        if (!isOpen) {
+            const handleTransitionEnd = (event) => {
+                if (event.propertyName === 'max-height') {
+                    fullStackPanel.hidden = true;
+                    fullStackPanel.removeEventListener('transitionend', handleTransitionEnd);
+                }
+            };
+
+            fullStackPanel.addEventListener('transitionend', handleTransitionEnd);
+        }
     });
 }
+

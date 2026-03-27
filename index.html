@@ -143,17 +143,153 @@
         <!-- Tech Stack -->
         <section class="section tech-stack reveal-hidden" id="stack">
             <h2 class="section-title">TECH STACK</h2>
-            <p style="color:var(--text-secondary); font-size:1rem; margin-bottom:15px;">i'm a generalist at heart who can build with anything, but here's the core stack i've spent the most time with:</p>
-            
-            <div class="stack-grid">
-                <div class="stack-item" title="React"><i data-lucide="codesandbox"></i><span>React</span></div>
-                <div class="stack-item" title="Next.js"><i data-lucide="triangle"></i><span>Next.js</span></div>
-                <div class="stack-item" title="Node.js"><i data-lucide="server"></i><span>Node</span></div>
-                <div class="stack-item" title="TailwindCSS"><i data-lucide="wind"></i><span>Tailwind</span></div>
-                <div class="stack-item" title="PostgreSQL"><i data-lucide="database"></i><span>Postgres</span></div>
-                <div class="stack-item" title="Figma"><i data-lucide="figma"></i><span>Figma</span></div>
-                <div class="stack-item" title="AWS"><i data-lucide="cloud"></i><span>AWS</span></div>
+            <p class="stack-copy">i'm a generalist at heart who can build with anything, but here's the core stack i've spent the most time with:</p>
+
+            <button class="stack-toggle" id="stack-toggle" type="button" aria-expanded="false" aria-controls="full-stack-panel">
+                View Full Stack
+            </button>
+
+            <div class="stack-preview" aria-hidden="true">
+                <div class="stack-preview-mask">
+                    <div class="stack-preview-track">
+                        <div class="stack-preview-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt=""></div>
+                        <div class="stack-preview-icon"><img src="https://cdn.simpleicons.org/javascript/currentColor" alt=""></div>
+                        <div class="stack-preview-icon"><img src="https://cdn.simpleicons.org/typescript/currentColor" alt=""></div>
+                        <div class="stack-preview-icon"><img src="https://cdn.simpleicons.org/php/currentColor" alt=""></div>
+                        <div class="stack-preview-icon"><img src="https://cdn.simpleicons.org/cplusplus/currentColor" alt=""></div>
+                        <div class="stack-preview-icon"><img src="https://cdn.simpleicons.org/react/currentColor" alt=""></div>
+                        <div class="stack-preview-icon"><img src="https://cdn.simpleicons.org/nextdotjs/currentColor" alt=""></div>
+                        <div class="stack-preview-icon"><img src="https://cdn.simpleicons.org/tailwindcss/currentColor" alt=""></div>
+                        <div class="stack-preview-icon"><img src="https://cdn.simpleicons.org/shadcnui/currentColor" alt=""></div>
+                        <div class="stack-preview-icon"><img src="https://cdn.simpleicons.org/framer/currentColor" alt=""></div>
+                        <div class="stack-preview-icon"><img src="https://cdn.simpleicons.org/springboot/currentColor" alt=""></div>
+                        <div class="stack-preview-icon"><img src="https://cdn.simpleicons.org/hibernate/currentColor" alt=""></div>
+                        <div class="stack-preview-icon"><img src="https://cdn.simpleicons.org/mongodb/currentColor" alt=""></div>
+                        <div class="stack-preview-icon"><img src="https://cdn.simpleicons.org/git/currentColor" alt=""></div>
+                        <div class="stack-preview-icon"><img src="https://cdn.simpleicons.org/github/currentColor" alt=""></div>
+                        <div class="stack-preview-icon"><img src="https://cdn.simpleicons.org/docker/currentColor" alt=""></div>
+                        <div class="stack-preview-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt=""></div>
+                        <div class="stack-preview-icon"><img src="https://cdn.simpleicons.org/postman/currentColor" alt=""></div>
+                        <div class="stack-preview-icon"><img src="https://cdn.simpleicons.org/xampp/currentColor" alt=""></div>
+                        <div class="stack-preview-icon"><img src="https://cdn.simpleicons.org/jira/currentColor" alt=""></div>
+                        <div class="stack-preview-icon"><img src="https://cdn.simpleicons.org/vercel/currentColor" alt=""></div>
+                        <div class="stack-preview-icon"><img src="https://cdn.simpleicons.org/huggingface/currentColor" alt=""></div>
+                        <div class="stack-preview-icon"><img src="https://cdn.simpleicons.org/pandas/currentColor" alt=""></div>
+                        <div class="stack-preview-icon"><img src="https://cdn.simpleicons.org/pytorch/currentColor" alt=""></div>
+
+                        <div class="stack-preview-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt=""></div>
+                        <div class="stack-preview-icon"><img src="https://cdn.simpleicons.org/javascript/currentColor" alt=""></div>
+                        <div class="stack-preview-icon"><img src="https://cdn.simpleicons.org/typescript/currentColor" alt=""></div>
+                        <div class="stack-preview-icon"><img src="https://cdn.simpleicons.org/php/currentColor" alt=""></div>
+                        <div class="stack-preview-icon"><img src="https://cdn.simpleicons.org/cplusplus/currentColor" alt=""></div>
+                        <div class="stack-preview-icon"><img src="https://cdn.simpleicons.org/react/currentColor" alt=""></div>
+                        <div class="stack-preview-icon"><img src="https://cdn.simpleicons.org/nextdotjs/currentColor" alt=""></div>
+                        <div class="stack-preview-icon"><img src="https://cdn.simpleicons.org/tailwindcss/currentColor" alt=""></div>
+                        <div class="stack-preview-icon"><img src="https://cdn.simpleicons.org/shadcnui/currentColor" alt=""></div>
+                        <div class="stack-preview-icon"><img src="https://cdn.simpleicons.org/framer/currentColor" alt=""></div>
+                        <div class="stack-preview-icon"><img src="https://cdn.simpleicons.org/springboot/currentColor" alt=""></div>
+                        <div class="stack-preview-icon"><img src="https://cdn.simpleicons.org/hibernate/currentColor" alt=""></div>
+                        <div class="stack-preview-icon"><img src="https://cdn.simpleicons.org/mongodb/currentColor" alt=""></div>
+                        <div class="stack-preview-icon"><img src="https://cdn.simpleicons.org/git/currentColor" alt=""></div>
+                        <div class="stack-preview-icon"><img src="https://cdn.simpleicons.org/github/currentColor" alt=""></div>
+                        <div class="stack-preview-icon"><img src="https://cdn.simpleicons.org/docker/currentColor" alt=""></div>
+                        <div class="stack-preview-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt=""></div>
+                        <div class="stack-preview-icon"><img src="https://cdn.simpleicons.org/postman/currentColor" alt=""></div>
+                        <div class="stack-preview-icon"><img src="https://cdn.simpleicons.org/xampp/currentColor" alt=""></div>
+                        <div class="stack-preview-icon"><img src="https://cdn.simpleicons.org/jira/currentColor" alt=""></div>
+                        <div class="stack-preview-icon"><img src="https://cdn.simpleicons.org/vercel/currentColor" alt=""></div>
+                        <div class="stack-preview-icon"><img src="https://cdn.simpleicons.org/huggingface/currentColor" alt=""></div>
+                        <div class="stack-preview-icon"><img src="https://cdn.simpleicons.org/pandas/currentColor" alt=""></div>
+                        <div class="stack-preview-icon"><img src="https://cdn.simpleicons.org/pytorch/currentColor" alt=""></div>
+                    </div>
+                </div>
             </div>
+
+            <div class="full-stack-panel" id="full-stack-panel" hidden>
+                <div class="stack-spec-grid">
+                    <div class="stack-spec-column">
+                        <h3>Languages</h3>
+                        <div class="stack-spec-list">
+                            <div class="stack-spec-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java"><span>Java</span></div>
+                            <div class="stack-spec-item"><img src="https://cdn.simpleicons.org/javascript/currentColor" alt="JavaScript"><span>JavaScript</span></div>
+                            <div class="stack-spec-item"><img src="https://cdn.simpleicons.org/typescript/currentColor" alt="TypeScript"><span>TypeScript</span></div>
+                            <div class="stack-spec-item"><img src="https://cdn.simpleicons.org/php/currentColor" alt="PHP"><span>PHP</span></div>
+                            <div class="stack-spec-item"><img src="https://cdn.simpleicons.org/cplusplus/currentColor" alt="C++"><span>C++</span></div>
+                        </div>
+                    </div>
+
+                    <div class="stack-spec-column">
+                        <h3>Frontend</h3>
+                        <div class="stack-spec-list">
+                            <div class="stack-spec-item"><img src="https://cdn.simpleicons.org/react/currentColor" alt="React.js"><span>React.js</span></div>
+                            <div class="stack-spec-item"><img src="https://cdn.simpleicons.org/nextdotjs/currentColor" alt="Next.js"><span>Next.js</span></div>
+                            <div class="stack-spec-item"><img src="https://cdn.simpleicons.org/tailwindcss/currentColor" alt="Tailwind CSS"><span>Tailwind CSS</span></div>
+                            <div class="stack-spec-item"><img src="https://cdn.simpleicons.org/shadcnui/currentColor" alt="shadcn ui"><span>shadcn ui</span></div>
+                            <div class="stack-spec-item"><img src="https://cdn.simpleicons.org/framer/currentColor" alt="framer motion"><span>framer motion</span></div>
+                        </div>
+                    </div>
+
+                    <div class="stack-spec-column">
+                        <h3>Backend &amp; DB</h3>
+                        <div class="stack-spec-list">
+                            <div class="stack-spec-item"><img src="https://cdn.simpleicons.org/springboot/currentColor" alt="Spring Boot"><span>Spring Boot</span></div>
+                            <div class="stack-spec-item"><img src="https://cdn.simpleicons.org/hibernate/currentColor" alt="Hibernate (JPA)"><span>Hibernate (JPA)</span></div>
+                            <div class="stack-spec-item"><img src="https://cdn.simpleicons.org/mongodb/currentColor" alt="MongoDB"><span>MongoDB</span></div>
+                            <div class="stack-spec-item"><img src="https://cdn.simpleicons.org/mysql/currentColor" alt="MySQL"><span>MySQL</span></div>
+                        </div>
+                    </div>
+
+                    <div class="stack-spec-column">
+                        <h3>Infra &amp; Tools</h3>
+                        <div class="stack-spec-list">
+                            <div class="stack-spec-item"><img src="https://cdn.simpleicons.org/git/currentColor" alt="Git"><span>Git</span></div>
+                            <div class="stack-spec-item"><img src="https://cdn.simpleicons.org/github/currentColor" alt="GitHub"><span>GitHub</span></div>
+                            <div class="stack-spec-item"><img src="https://cdn.simpleicons.org/docker/currentColor" alt="Docker"><span>Docker</span></div>
+                            <div class="stack-spec-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS"><span>AWS</span></div>
+                            <div class="stack-spec-item"><img src="https://cdn.simpleicons.org/postman/currentColor" alt="Postman"><span>Postman</span></div>
+                            <div class="stack-spec-item"><img src="https://cdn.simpleicons.org/xampp/currentColor" alt="XAMPP"><span>XAMPP</span></div>
+                            <div class="stack-spec-item"><img src="https://cdn.simpleicons.org/jira/currentColor" alt="JIRA"><span>JIRA</span></div>
+                            <div class="stack-spec-item"><img src="https://cdn.simpleicons.org/vercel/currentColor" alt="Vercel"><span>Vercel</span></div>
+                        </div>
+                    </div>
+
+                    <div class="stack-spec-column">
+                        <h3>AI &amp; ML</h3>
+                        <div class="stack-spec-list">
+                            <div class="stack-spec-item"><img src="https://cdn.simpleicons.org/huggingface/currentColor" alt="Hugging Face"><span>Hugging Face</span></div>
+                            <div class="stack-spec-item"><img src="https://cdn.simpleicons.org/pandas/currentColor" alt="Pandas"><span>Pandas</span></div>
+                            <div class="stack-spec-item"><img src="https://cdn.simpleicons.org/pytorch/currentColor" alt="PyTorch"><span>PyTorch</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section about-me reveal-hidden" id="about-me">
+            <h2 class="section-title">THING ABOUT ME</h2>
+            <div class="about-copy">
+                <p>
+                    beyond engineering and build systems, i find balance in the tactile and the
+                    thoughtful. whether it's exploring the nuances of complex architectures or
+                    spending time in the real world, my approach to life is driven by curiosity and a
+                    desire to understand how things work at their core.
+                </p>
+                <p>
+                    i believe that the best products are built by people who have a diverse range of
+                    interests. it's the unique combination of technical depth and human perspective
+                    that allows us to create technology that actually resonates.
+                </p>
+            </div>
+        </section>
+
+        <section class="section contact-cta reveal-hidden" id="contact-cta">
+            <h2 class="section-title">GET IN TOUCH</h2>
+            <p class="contact-cta-copy">
+                connect with me on
+                <a href="https://www.linkedin.com/in/contactrahulkhade/" target="_blank" rel="noreferrer" class="contact-inline-link">linkedin</a>
+                or shoot an
+                <a href="mailto:rahulkhadeeng@gmail.com" class="contact-inline-link">email</a>
+            </p>
         </section>
         
         <!-- Bottom spacing for the dock -->
@@ -162,16 +298,13 @@
 
     <!-- Floating Dock overlay -->
     <div class="floating-dock">
-        <!-- Agent Mode Toggle icon -->
-        <a href="#" class="dock-item" id="agent-toggle" title="Agent Mode"><i data-lucide="terminal"></i></a>
+        <a href="#" class="dock-item" title="View Resume" aria-label="View Resume"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M10 13h4"/><path d="M10 17h4"/><path d="M8 9h1"/></svg></a>
         <div class="dock-divider"></div>
-        
         <a href="#hero" class="dock-item" title="About"><i data-lucide="user"></i></a>
         <a href="#experience" class="dock-item" title="Experience"><i data-lucide="briefcase"></i></a>
-        <a href="https://github.com/rahul-khade" target="_blank" class="dock-item" title="GitHub"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg></a>
-        <a href="https://linkedin.com/in/rahulkhade" target="_blank" class="dock-item" title="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg></a>
-        <a href="https://twitter.com/rahulkhade" target="_blank" class="dock-item" title="Twitter/X"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg></a>
-        <a href="mailto:hello@example.com" class="dock-item" title="Contact"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></a>
+        <a href="https://github.com/rahulkhadeeng" target="_blank" class="dock-item" title="GitHub"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg></a>
+        <a href="https://www.linkedin.com/in/contactrahulkhade/" target="_blank" class="dock-item" title="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg></a>
+        <a href="mailto:rahulkhadeeng@gmail.com" class="dock-item" title="Contact"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></a>
     </div>
 
     <!-- Custom JS -->
