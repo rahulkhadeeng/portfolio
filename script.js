@@ -1,5 +1,7 @@
-// Initialize Lucide Icons
-lucide.createIcons();
+// Initialize Lucide Icons without breaking the rest of the page
+if (window.lucide && typeof window.lucide.createIcons === 'function') {
+    window.lucide.createIcons();
+}
 
 // Setup Live IST Clock
 function updateClock() {
@@ -47,11 +49,13 @@ const setTheme = (theme) => {
 // Initialize Theme
 setTheme(getPreferredTheme());
 
-themeToggle.addEventListener('click', () => {
-    const currentTheme = rootElement.getAttribute('data-theme');
-    const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-    setTheme(newTheme);
-});
+if (themeToggle) {
+    themeToggle.addEventListener('click', () => {
+        const currentTheme = rootElement.getAttribute('data-theme');
+        const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+        setTheme(newTheme);
+    });
+}
 
 // Scroll Reveal Animation (Intersection Observer)
 const observerOptions = {
@@ -60,20 +64,23 @@ const observerOptions = {
     threshold: 0.1
 };
 
-const observer = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('reveal-visible');
-        } else {
-            // Optional: Remove if we want it to animate every time we scroll up/down
-            // entry.target.classList.remove('reveal-visible');
-        }
-    });
-}, observerOptions);
+if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('reveal-visible');
+            }
+        });
+    }, observerOptions);
 
-document.querySelectorAll('.reveal-hidden').forEach(element => {
-    observer.observe(element);
-});
+    document.querySelectorAll('.reveal-hidden').forEach(element => {
+        observer.observe(element);
+    });
+} else {
+    document.querySelectorAll('.reveal-hidden').forEach(element => {
+        element.classList.add('reveal-visible');
+    });
+}
 
 // View More Accordion Logic
 document.querySelectorAll('.view-more-btn').forEach(btn => {
