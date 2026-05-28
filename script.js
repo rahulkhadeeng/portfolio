@@ -85,7 +85,9 @@ if ('IntersectionObserver' in window) {
 // View More Accordion Logic
 document.querySelectorAll('.view-more-btn').forEach(btn => {
     btn.addEventListener('click', () => {
-        const details = btn.nextElementSibling;
+        const details = btn.parentElement.querySelector('.project-details-v2') || btn.nextElementSibling;
+        if (!details) return;
+
         const isOpen = details.style.display === 'block';
 
         details.style.display = isOpen ? 'none' : 'block';
@@ -98,6 +100,25 @@ document.querySelectorAll('.view-more-btn').forEach(btn => {
         }
     });
 });
+
+// Project section reveal toggle
+const projectsToggle = document.getElementById('projects-toggle');
+const extraProjects = document.getElementById('extra-projects');
+
+if (projectsToggle && extraProjects) {
+    const toggleLabel = projectsToggle.querySelector('span');
+
+    projectsToggle.addEventListener('click', () => {
+        const isOpen = projectsToggle.classList.toggle('open');
+
+        extraProjects.hidden = !isOpen;
+        projectsToggle.setAttribute('aria-expanded', String(isOpen));
+
+        if (toggleLabel) {
+            toggleLabel.textContent = isOpen ? 'Show Less' : 'View More';
+        }
+    });
+}
 
 // Tech Stack reveal toggle
 const stackToggle = document.getElementById('stack-toggle');
@@ -132,4 +153,3 @@ if (stackToggle && fullStackPanel) {
         }
     });
 }
-
