@@ -1281,3 +1281,40 @@ ul.project-details-v2 {
         padding-top: 56px;
     }
 }
+
+/* ----- Contact: elegant glass surface ----- */
+.contact-cta {
+    position: relative;
+    margin-top: 56px;
+    padding: 56px 32px;
+    border-radius: 22px;
+    border: 1px solid var(--border-color);
+    background: color-mix(in srgb, var(--dock-bg) 60%, transparent);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: var(--card-shadow);
+    overflow: hidden;
+    transition: border-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+.contact-cta:hover {
+    border-color: var(--card-border-hover);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.10);
+}
+
+.contact-inline-link {
+    transition: opacity 0.2s ease, color 0.3s ease, text-decoration-color 0.3s ease;
+}
+
+.contact-inline-link:hover {
+    color: #6366f1;
+    text-decoration-color: #6366f1;
+    opacity: 1;
+}
+
+@media (max-width: 600px) {
+    .contact-cta {
+        margin-top: 40px;
+        padding: 44px 22px;
+    }
+}
