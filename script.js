@@ -103,15 +103,17 @@ document.querySelectorAll('.view-more-btn').forEach(btn => {
 
 // Project section reveal toggle
 const projectsToggle = document.getElementById('projects-toggle');
-const extraProjects = document.getElementById('extra-projects');
+const extraProjects = document.querySelectorAll('.project-extra-v2');
 
-if (projectsToggle && extraProjects) {
+if (projectsToggle && extraProjects.length) {
     const toggleLabel = projectsToggle.querySelector('span');
 
     projectsToggle.addEventListener('click', () => {
         const isOpen = projectsToggle.classList.toggle('open');
 
-        extraProjects.hidden = !isOpen;
+        extraProjects.forEach((project) => {
+            project.hidden = !isOpen;
+        });
         projectsToggle.setAttribute('aria-expanded', String(isOpen));
 
         if (toggleLabel) {
